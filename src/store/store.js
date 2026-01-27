@@ -3,7 +3,7 @@
 export const store = {
     users : [],
     productos : [],
-    user_data : null
+    user_actual : null
 }
 
 //-----------------------------------
@@ -20,7 +20,8 @@ export class Usuario{
         this.nombre = nombre,
         this.email = email,
         this.password = password,
-        this.rol = "visitante"
+        this.rol = "visitante",
+        this.compras = []
     }
 }
 
@@ -34,6 +35,7 @@ const API_URL = "http://localhost:3000";
 
 export async function getUsuarios(){
     const response = await fetch(`${API_URL}/users`);
+    if (!response.ok) {throw new Error("no fue posible cargar los usuarios")}
     const users = await response.json();
 
     return users}
@@ -45,6 +47,8 @@ export async function createUsuario(user) {
         headers : {"Content-Type": "application/json"},
         body : JSON.stringify(user)
     })
+
+    if (!response.ok) {throw new Error("no fue posible crear nuevo usuario")}
 
     const nuevoUser = await response.json();
     store.users.push(nuevoUser)}
@@ -105,4 +109,47 @@ export async function deleteProducto(id) {
 function eliminarStoreProducto(id){
     store.productos = store.productos.filter( producto => producto.id != id)}
 
+//-------------------------------------------------
+// control de sesion y login
+
+export function iniciarSesion(email){
+
+    const user = findUser(email);
+    store.user_actual = user,
+    localStorage.setItem("user_actual", JSON.stringify(store.user_actual));
+    console.log(user)
+
+}
+
+export function cerrarSesion(){
+
+    store.user_actual = null;
+    localStorage.removeItem("user_actual")
+}
+
+export function findUser(email){
+    for (const user of store.users)
+    {
+        if (user.email === email) {return  user};
+    }
+    return null
+}
+
+//-------------------------------------------------
+// localstorage
+
+function cargarLocalStorage(){
+    const user = JSON.parse(localStorage.getItem("user_actual"));
+    store.user_actual = user;
+}
+
+//------------------------------------------------
+
+export async function iniciarDatos() {
+
+    cargarLocalStorage();
+    store.users = await getUsuarios();
+    store.productos = await getProductos();
+    
+}
 //-------------------------------------------------
