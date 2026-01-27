@@ -1,12 +1,76 @@
 {
-    "users" : [
-        {
-            "id" : "1",
-            "name" : "antonio",
-            "rol" : "admin",
-            "email" : "admin@gmail.com",
-            "password" : "12345"
-        }
-    ],
-    "productos" : []
+  "users": [
+    {
+      "id": "1",
+      "name": "antonio",
+      "rol": "admin",
+      "email": "admin@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "ee18",
+      "nombre": "pedro",
+      "email": "pedro@gmail.com",
+      "password": "54321",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "bdaf",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "9dad",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "9563",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "78a8",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "475a",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "6d5a",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    },
+    {
+      "id": "acad",
+      "nombre": "",
+      "email": "",
+      "password": "",
+      "rol": "visitante",
+      "compras": []
+    }
+  ],
+  "productos": []
 }

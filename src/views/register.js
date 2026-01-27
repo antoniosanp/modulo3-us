@@ -13,13 +13,14 @@ export function registerView(){
         <input type="text" name="email" id="email" placeholder="usuario@gmail.com">
         <input type="password" name="password" id="password" placeholder="*****">
         <button type="submit">registrarse</button>
+        <a href="#/login"><button>Atrás</button>
         
     </form>
     
 
     `
 
-    const form = registerDiv.querySelector("#lregisterForm");
+    const form = registerDiv.querySelector("#registerForm");
     const name = registerDiv.querySelector("#userName")
     const email = registerDiv.querySelector("#email");
     const password = registerDiv.querySelector("#password");
@@ -29,6 +30,8 @@ export function registerView(){
 
         const newUser = new Usuario(name.value, email.value, password.value);
         createUsuario(newUser);
+
+        location.hash = "#/login"
     })
 
     return registerDiv

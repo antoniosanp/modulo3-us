@@ -9,7 +9,7 @@ export function loginView(){
         <input type="text" name="email" id="email" placeholder="admin@gmail.com">
         <input type="password" name="password" id="password" placeholder="*****">
         <button type="submit">iniciar sesion</button>
-        <a href="#/registro"> registro</a>
+        <a href="#/register"> registro</a>
     </form>
     
 

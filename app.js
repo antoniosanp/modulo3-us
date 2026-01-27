@@ -13,6 +13,6 @@ export const app = document.getElementById("app");
 
 app.appendChild(loginView());
 console.log("hola")
-
+location.hash = "#/home"
 router();
 window.addEventListener("hashchange", router);
