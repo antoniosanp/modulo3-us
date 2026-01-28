@@ -1,6 +1,5 @@
 import { iniciarDatos, store } from "./src/store/store.js";
 import { loginView } from "./src/views/login.js";
-import { findUser } from "./src/store/store.js";
 import { router } from "./src/router/router.js";
 
 
