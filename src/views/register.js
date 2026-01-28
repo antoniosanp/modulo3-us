@@ -13,7 +13,7 @@ export function registerView(){
         <input type="text" required name="email" id="email" placeholder="usuario@gmail.com">
         <input type="password" required name="password" id="password" placeholder="*****">
         <button type="submit">registrarse</button>
-        <a href="#/login"><button>Atrás</button>
+        <a href="#/login">Atrás</a>
         
     </form>
     

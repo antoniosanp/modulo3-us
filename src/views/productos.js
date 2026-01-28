@@ -14,7 +14,7 @@ export function productosView(){
     `
 
     const divContenedor = productosView.querySelector("#productosContenedor");
-    divContenedor.textContent = "hola"
+    
     
     crearCartas(divContenedor)
     return productosView

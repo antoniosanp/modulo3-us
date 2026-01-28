@@ -88,6 +88,18 @@
       "nombre": "a",
       "precio": "2",
       "cantidad": "4"
+    },
+    {
+      "id": "1a49",
+      "nombre": "12",
+      "precio": "2",
+      "cantidad": "2"
+    },
+    {
+      "id": "c7f5",
+      "nombre": "asd",
+      "precio": "2",
+      "cantidad": "4"
     }
   ]
 }
