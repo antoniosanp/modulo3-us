@@ -1,4 +1,5 @@
-import { store } from "../store/store";
+import { store } from "../store/store.js";
+import { productosCard } from "../components/productosCard.js";
 export function productosView(){
 
     const productosView = document.createElement("div");
@@ -7,13 +8,25 @@ export function productosView(){
     `
         <h1> soy la lista de productos </h1>
 
-        <div id = "contenedorProductos>
-        </div>
+
+        <div id="productosContenedor"></div>
     
     `
 
-    const div = productosView.querySelector("#contenedorProductos")
+    const divContenedor = productosView.querySelector("#productosContenedor");
+    divContenedor.textContent = "hola"
+    
+    crearCartas(divContenedor)
     return productosView
 
 
+}
+
+function crearCartas(divi){
+    for (const producto of store.productos)
+    {   console.log(producto)
+        const card = productosCard(producto);
+        console.log(card)
+        divi.appendChild(card)
+    }
 }

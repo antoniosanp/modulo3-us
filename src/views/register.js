@@ -9,9 +9,9 @@ export function registerView(){
     <form id="registerForm" action="">
         
 
-        <input type="text" name="usernaname" id="userName" placeholder="nombre de usuario">
-        <input type="text" name="email" id="email" placeholder="usuario@gmail.com">
-        <input type="password" name="password" id="password" placeholder="*****">
+        <input type="text" required name="usernaname" id="userName" placeholder="nombre de usuario">
+        <input type="text" required name="email" id="email" placeholder="usuario@gmail.com">
+        <input type="password" required name="password" id="password" placeholder="*****">
         <button type="submit">registrarse</button>
         <a href="#/login"><button>Atrás</button>
         

@@ -4,7 +4,7 @@ import { router } from "./src/router/router.js";
 
 
 await iniciarDatos();
-
+console.log(store)
 
 
 export const app = document.getElementById("app");
@@ -15,3 +15,7 @@ console.log("hola")
 location.hash = "#/home"
 router();
 window.addEventListener("hashchange", router);
+window.addEventListener('beforeunload', () => {
+    console.log('PAGE RELOADING!');
+    console.trace();
+});

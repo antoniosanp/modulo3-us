@@ -4,12 +4,15 @@ import { store, cerrarSesion } from "../store/store.js";
 import { homeView } from "../views/home.js";
 import { navbar } from "../components/navbar.js";
 import { notFoundView } from "../views/notFound.js";
+import { administrarView } from "../views/administrar.js";
 import { app } from "../../app.js";
+import { productosView } from "../views/productos.js";
 
 export function router(){
 
     //------------------------------------------------
     const hash = location.hash;
+    console.log("Router called, hash:", hash);
     app.innerHTML = "";
 
     if (!store.user_actual && hash !== "#/register") {location.hash = "#/login"}
@@ -32,6 +35,17 @@ export function router(){
             console.log("en home");
             app.append(navbar(),homeView())
             break;
+
+        case "#/administrar":
+            console.log("en administrar");
+            app.append(navbar(), administrarView());
+            break;
+
+        case "#/productos":
+            console.log("en producto");
+            app.append(navbar(), productosView());
+            break;
+
 
         case "#/logout":
             console.log("cerrando sesion");

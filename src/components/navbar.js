@@ -13,7 +13,8 @@ export function navbar(){
     `
         <ul>
             <li> <a href="#/home"> Inicio </li>
-            <li> <a href="#/productos"> Productos </li>
+            <li> <a href="#/administrar">Administrar Productos </li>
+            <li> <a href="#/productos"> productos </li>
             <li> <a href="#/logout"> Cerrar sesion </li>
         </ul>
 
@@ -28,6 +29,7 @@ export function navbar(){
         <ul>
             <li> <a href="#/home"> Inicio </li>
             <li> <a href="#/carrito"> carrito </li>
+            <li> <a href="#/productos"> productos </li>
             <li> <a href="#/logout"> Cerrar sesion </li>
         </ul>
 
