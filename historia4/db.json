@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "antonio",
+      "rol": "admin",
+      "email": "admin@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "ee18",
+      "nombre": "pedro",
+      "email": "pedro@gmail.com",
+      "password": "54321",
+      "rol": "visitante",
+      "compras": []
+    }
+  ],
+  "productos": [
+    {
+      "id": "4b1b",
+      "nombre": "galletas",
+      "precio": "2333",
+      "cantidad": "23"
+    },
+    {
+      "id": "4a1c",
+      "nombre": "panela",
+      "precio": "4423",
+      "cantidad": "99"
+    },
+    {
+      "id": "76c2",
+      "nombre": "limon",
+      "precio": "399",
+      "cantidad": "87"
+    },
+    {
+      "id": "6191",
+      "nombre": "cafe",
+      "precio": "434",
+      "cantidad": "43"
+    },
+    {
+      "id": "56ec",
+      "nombre": "agua",
+      "precio": "2000",
+      "cantidad": "424"
+    },
+    {
+      "id": "a78e",
+      "nombre": "arroz",
+      "precio": "434",
+      "cantidad": "435"
+    },
+    {
+      "id": "5845",
+      "nombre": "sd",
+      "precio": "55",
+      "cantidad": "24"
+    },
+    {
+      "id": "5e9a",
+      "nombre": "hola",
+      "precio": "1",
+      "cantidad": "2"
+    },
+    {
+      "id": "9d94",
+      "nombre": "a",
+      "precio": "2",
+      "cantidad": "3"
+    },
+    {
+      "id": "aad4",
+      "nombre": "final",
+      "precio": "23",
+      "cantidad": "32"
+    },
+    {
+      "id": "d994",
+      "nombre": "ultimo",
+      "precio": "3",
+      "cantidad": "2"
+    },
+    {
+      "id": "af9a",
+      "nombre": "a",
+      "precio": "2",
+      "cantidad": "4"
+    },
+    {
+      "id": "1a49",
+      "nombre": "12",
+      "precio": "2",
+      "cantidad": "2"
+    },
+    {
+      "id": "c7f5",
+      "nombre": "asd",
+      "precio": "2",
+      "cantidad": "4"
+    }
+  ]
+}
